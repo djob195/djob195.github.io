@@ -70,5 +70,5 @@ It is worth noting that, to further strengthen the OTP process, all firewall blo
 
 ## resources
 
-* [My example sms pumping](https://github.com/djob195/brainyBits/tree/master/structures/heap_project)
+* [My example sms pumping](https://github.com/djob195/brainyBits/tree/master/cases/sms-pumping-case)
 * [Akamai academic](https://www.akamai.com/glossary/what-is-sms-pumping)
