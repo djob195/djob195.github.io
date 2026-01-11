@@ -67,3 +67,8 @@ The solution fully resolved the problem. After its implementation, daily SMS bil
 * Furthermore, OTP requests were unique and single-use; therefore, even if the attacker obtained a valid request, it could not be reused.
 
 It is worth noting that, to further strengthen the OTP process, all firewall blocking rules implemented during the temporary solutions were maintained. Additionally, the OTP-by-SMS service for the affected country was reactivated, providing a higher level of security without compromising operations.
+
+## resources
+
+* [My example sms pumping](https://github.com/djob195/brainyBits/tree/master/structures/heap_project)
+* [Akamai academic](https://www.akamai.com/glossary/what-is-sms-pumping)
