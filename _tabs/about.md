@@ -3,9 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-Software Engineer - Guatemala
-## ABOUT ME
-Software Engineer with +4 years of experience leading technical teams of up to 4 developers in e-commerce, delivery, and B2B advertising projects for the Latin American market. Certified in Scrum and AWS. Created digital solutions that impacted over 10,000 users and generated additional revenue through product monetization and process traceability. Directed initiatives for search and recommendation systems, improving user experience, and contributing to the growth of more than +3 companies.
+Guatemalan Software Engineer with +4 years of experience leading technical teams of up to 4 developers in e-commerce, delivery, and B2B advertising projects for the Latin American market. Certified in Scrum and AWS. Created digital solutions that impacted over 10,000 users and generated additional revenue through product monetization and process traceability. Directed initiatives for search and recommendation systems, improving user experience, and contributing to the growth of more than +3 companies.
 
 ## PROFESSIONAL EXPERIENCE
 
