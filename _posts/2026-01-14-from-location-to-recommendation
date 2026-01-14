@@ -1,0 +1,88 @@
+---
+layout: post
+title: "From location to recommendation"
+date: "2026-01-14 09:00:00"
+categories: cases
+tags: clustering distances unsupervised supervised learning
+---
+You have probably browsed delivery applications and noticed features such as finding the nearest restaurants to your location in just a few seconds. Behind this apparent simplicity lies a combination of artificial intelligence and geolocation techniques that make this experience possible.
+
+In this blog, I will explain in a simple way how some of these techniques work, focusing mainly on supervised and unsupervised learning, applied to the restaurant use case.
+
+## Supervised learning
+
+One of the most common approaches in machine learning is supervised learning, which is based on previously labeled data.
+
+### Data Labeling
+
+Data labeling is a fundamental process, although it is often time-consuming since, in many cases, it is performed manually. It consists of assigning meaning to the data so that models can learn patterns and make decisions.
+
+Following the restaurant example, a common form of labeling occurs when users assign a rating from 1 to 5 stars, indicating how good they consider a restaurant to be. These labels allow models to be trained to recommend places based on the experiences of other users.
+
+![data labeling](/assets/posts/2026-01-14/learning_supervised.png "data labeling")
+
+## Unsupervised learning
+
+However, it is not always possible to label data directly. In such cases, unsupervised learning techniques are used.
+
+### Clustering
+
+Clustering is a technique that allows data to be grouped based on shared attributes, without the need for prior labels. This helps uncover hidden patterns and create new decision-making models.
+
+In the context of restaurants, one of the most important attributes is geolocation. Based on the user’s location and the locations of businesses, it is possible to group nearby restaurants using distance and geographic proximity techniques.
+
+![clustering](/assets/posts/2026-01-14/unsupervised.png "clustering")
+
+## Key Geolocation Concepts
+
+To better understand these processes, it is important to be familiar with some fundamental geolocation concepts:
+
+* **GeoJSON:** A standard JSON-based format used to represent geographic data, such as points, lines, and polygons.
+* **Geographic Point:** Represents a specific location on the map, defined by two values: latitude and longitude.
+* **Polygon:** A set of three or more geographic points that form a closed area, starting and ending at the same point.
+
+### Geographic Metrics Used in Models
+When working with latitude and longitude, it is possible to compute metrics that are very useful for recommendation models:
+
+* **Haversine Distance:** Calculates the linear distance between two geographic points on the Earth’s surface.
+$$
+d = 2 \cdot 6371 \,\text{km} \cdot 
+\arcsin\left(
+\sqrt{
+\sin^2\left(\frac{\Delta lat}{2}\right) +
+\cos(lat_1)\cos(lat_2)\sin^2\left(\frac{\Delta lon}{2}\right)
+}
+\right)
+$$
+
+$$
+\Delta lat = lat_2 - lat_1
+$$
+
+$$
+\Delta lon = lon_2 - lon_1
+$$
+
+
+* **Bearing:** Calculates the angle or direction between two geographic points relative to the north axis, helping determine the relative orientation between locations.
+$$
+\theta = \operatorname{atan2}\left(
+\sin(\Delta lon)\cdot \cos(lat_2),
+\cos(lat_1)\cdot \sin(lat_2) -
+\sin(lat_1)\cdot \cos(lat_2)\cdot \cos(\Delta lon)
+\right)
+$$
+
+$$
+\Delta lon = lon_2 - lon_1
+$$
+
+$$
+\text{Bearing} =
+\left(
+\theta \cdot \frac{180}{\pi} + 360
+\right) \bmod 360
+$$
+
+## Practical Application
+Taking all the previous concepts into account, in the next section I will share more details about a real-world case I worked on, where these techniques are combined to provide location-based recommendations for users.
