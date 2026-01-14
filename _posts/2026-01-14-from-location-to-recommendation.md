@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Case: From location to recommendation"
+title: "From location to recommendation:case"
 date: "2026-01-14 09:00:00"
 categories: cases
 tags: clustering distances unsupervised supervised learning
 ---
+{% include mathjax.html %}
+
 You have probably browsed delivery applications and noticed features such as finding the nearest restaurants to your location in just a few seconds. Behind this apparent simplicity lies a combination of artificial intelligence and geolocation techniques that make this experience possible.
 
 In this blog, I will explain in a simple way how some of these techniques work, focusing mainly on supervised and unsupervised learning, applied to the restaurant use case.
