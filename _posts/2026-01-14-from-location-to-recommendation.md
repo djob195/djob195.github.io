@@ -139,4 +139,4 @@ This approach allowed the system to efficiently narrow down the search space usi
 
 ## resources
 
-* [My customer Recommendation Algorithm](https://github.com/djob195/brainyBits/tree/master/cases/sms-pumping-case)
+* [My customer Recommendation Algorithm](https://github.com/djob195/brainyBits/tree/master/cases/customer-recommendation)
