@@ -131,7 +131,7 @@ This architecture made it possible to:
 * Unify investment, impressions, and clicks into a single flow.
 * Identify the top-performing product of each campaign.
 * Measure the real profitability of advertising efforts.
-* Calculate metrics such as Return on Assets (ROA) per campaign and per product.
+* Calculate metrics such as Return on Assets (ROA) per campaign and per product. 
 
 
 ## Resourses
