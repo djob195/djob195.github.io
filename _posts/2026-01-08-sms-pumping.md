@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SMS pumping Case"
+title: "OTP Under Attack: The Silent Billing Threat of SMS Pumping"
 date: "2026-01-08 09:00:00"
 categories: cases
 tags: security ddos auth
@@ -71,4 +71,3 @@ It is worth noting that, to further strengthen the OTP process, all firewall blo
 ## resources
 
 * [My example sms pumping](https://github.com/djob195/brainyBits/tree/master/cases/sms-pumping-case)
-* [Akamai academic](https://www.akamai.com/glossary/what-is-sms-pumping)

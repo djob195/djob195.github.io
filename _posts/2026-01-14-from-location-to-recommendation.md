@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From location to recommendation: case"
+title: "Engineering Geographic Customer Recommendations at Scale"
 date: "2026-01-14 09:00:00"
 categories: cases
 tags: clustering distances unsupervised supervised learning
