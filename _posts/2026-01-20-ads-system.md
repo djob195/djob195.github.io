@@ -38,6 +38,9 @@ Since the request reaches a controlled environment, an image proxy can be implem
 
 P.S. This strategy introduces additional latency when loading the image.For this reason, it is recommended to separate asynchronous responsibilities (logging, analytics, metrics) to improve performance and reduce overall system complexity.
 
+![Impression diagram](/assets/posts/2026-01-20/impression.png "Impression diagram")
+
+
 ## Clicks: Measuring User Intent
 
 Another critical advertising metric is the click (or tap).
@@ -46,6 +49,8 @@ Clicks measure the user’s intent to learn more about a campaign or product. Si
 * The unique impression identifier is passed as a parameter.
 * The proxy registers the interaction event.
 * The flow ends with a redirection to the campaign’s landing page or product listing.
+
+![clic diagram](/assets/posts/2026-01-20/clic.png "clic diagram")
 
 ## CTR: Click-Through Rate
 
